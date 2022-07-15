@@ -1,0 +1,9 @@
+实例ID,操作系统,Region名称,所在可用区,弹性IP,内网IP,CPU,内存,网络类型,key,hostname
+i-bp1h5dtj3kpzbi8wyxs8,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,47.110.144.90,10.0.0.140,2,8192,vpc,1234.ComCom,1
+i-bp11yy3u5wci16bzmoqg,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,47.99.47.163,10.0.0.134,2,8192,vpc,1234.ComCom,2
+i-bp11yy3u5wci16bzmoqh,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,47.99.46.88,10.0.0.133,2,8192,vpc,1234.ComCom,3
+i-bp1cgdik6qjpy767myny,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,47.111.145.118,10.0.0.95,2,8192,vpc,1234.ComCom,4
+i-bp1dqmnil5l1fw2axztb,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,47.111.99.244,10.0.0.92,2,8192,vpc,1234.ComCom,5
+i-bp1413khkrp03oasojka,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,47.114.97.216,10.0.0.88,2,8192,vpc,1234.ComCom,6
+i-bp1413khkrp03oasojka,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,8.136.205.230,10.0.0.88,2,8192,vpc,1234.ComCom,7
+i-bp1413khkrp03oasojka,Ubuntu  20.04 64 bit,cn-hangzhou,cn-hangzhou-i,121.41.220.85,10.0.0.88,2,8192,vpc,1234.ComCom,8
