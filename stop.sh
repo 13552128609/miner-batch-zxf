@@ -28,7 +28,8 @@ do
   if [ ${index} -ge ${validBeginIndex} -a ${index} -le ${validEndIndex} ]
   then
   	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo pkill -9 test.sh"  	
-  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo pkill -9 mysql"  	
+  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo pkill -9 test1"  	
+  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo ps -ef | grep 8007 |grep -v grep | awk '{print $2}' | xargs sudo kill "
   	echo ${index} ${ip}
   fi 
   ((index++))

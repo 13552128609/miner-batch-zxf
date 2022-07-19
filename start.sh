@@ -2,7 +2,7 @@
 password=$(cat ./conf/pwd.txt)
 ips=($(cat ./conf/host.csv | awk -F',' {'print $5'}))
 names=($(cat ./conf/host.csv | awk -F',' {'print $11'}))
-coinbase='0x12345678'
+coinbase='0xEBE8e17F0a21559B9Dbc9260a41a4fFeb46457e0'
 
 validBeginIndex=0
 validEndIndex=${#ips[*]}

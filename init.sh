@@ -28,6 +28,9 @@ do
   if [ ${index} -ge ${validBeginIndex} -a ${index} -le ${validEndIndex} ]
   then
   	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "mkdir -p ~/bin"  	
+  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo apt-get update"  	
+  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo apt-get install cpulimit"  	
+  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "sudo apt-get install eval"  	
   	echo ${index} ${ip}
   fi 
   ((index++))
