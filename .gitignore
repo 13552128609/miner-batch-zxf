@@ -107,3 +107,7 @@ dist
 host.csv
 pwd.txt
 
+*.tgz
+conf/*
+bin/*
+
