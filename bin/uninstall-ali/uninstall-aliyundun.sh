@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/bin/uninstall-aliyun
+cd ~/bin/uninstall-ali
 . ./uninstall.sh
 . ./quartz_uninstall.sh
 
