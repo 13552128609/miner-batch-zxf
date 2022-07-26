@@ -17,6 +17,11 @@ then
 fi
 
 
+rm -rf ./bin/test.tgz
+cd ./bin
+tar cvfz test.tgz ./*
+cd -
+
 index=0
 for ip in ${ips[*]}
 do 
