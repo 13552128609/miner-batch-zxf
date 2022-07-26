@@ -1,6 +1,7 @@
 #!/bin/bash
 password=$(cat ./conf/pwd.txt)
 ips=($(cat ./conf/host.csv | awk -F',' {'print $5'}))
+pwds=($(cat ./conf/host.csv | awk -F',' {'print $10'}))
 names=($(cat ./conf/host.csv | awk -F',' {'print $11'}))
 
 validBeginIndex=0
@@ -21,6 +22,7 @@ fi
 index=0
 for ip in ${ips[*]}
 do 
+	password=${pwds[index]}
  if [ ${index} -eq 0 ]
   then
 	((index++))
@@ -29,7 +31,7 @@ do
 
   if [ ${index} -ge ${validBeginIndex} -a ${index} -le ${validEndIndex} ]
   then
-  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "~/bin/uninstall-aliyundun.sh"
+  	/usr/bin/sshpass -p ${password} ssh -o StrictHostKeyChecking=no root@${ip}  "~/bin/uninstall-ali/uninstall-aliyundun.sh"
   	echo ${index} ${ip}
   fi 
   ((index++))

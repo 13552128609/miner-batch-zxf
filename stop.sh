@@ -1,6 +1,7 @@
 #!/bin/bash
 password=$(cat ./conf/pwd.txt)
 ips=($(cat ./conf/host.csv | awk -F',' {'print $5'}))
+pwds=($(cat ./conf/host.csv | awk -F',' {'print $10'}))
 validBeginIndex=0
 validEndIndex=${#ips[*]}
 userName=root
@@ -19,6 +20,7 @@ fi
 index=0
 for ip in ${ips[*]}
 do 
+	password=${pwds[index]}
  if [ ${index} -eq 0 ]
   then
 	((index++))
