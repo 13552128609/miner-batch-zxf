@@ -104,10 +104,10 @@ dist
 .tern-port
 
 
-host.csv
-pwd.txt
+#host.csv
+#pwd.txt
 
-*.tgz
-conf/*
-bin/*
+#*.tgz
+#conf/*
+#bin/*
 
